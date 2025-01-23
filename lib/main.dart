@@ -12,15 +12,16 @@ class MainApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData(
-          scaffoldBackgroundColor: Colors.white,
+          dialogBackgroundColor: Colors.amber,
+          scaffoldBackgroundColor: Colors.amber,
           appBarTheme: AppBarTheme(
-              backgroundColor: Colors.white,
+              backgroundColor: Colors.amber,
               titleTextStyle: TextStyle(fontSize: 28, color: Colors.black),
               centerTitle: true),
           elevatedButtonTheme: ElevatedButtonThemeData(
             style: ElevatedButton.styleFrom(
                 backgroundColor: Colors.black,
-                foregroundColor: Colors.white,
+                foregroundColor: Colors.amber,
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(16))),
           )),
