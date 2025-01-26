@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:adivina_el_numero_app/escoge_numero.dart';
 import 'package:flutter/material.dart';
 
@@ -20,7 +22,10 @@ class SelectorAdivina extends StatelessWidget {
                   backgroundColor: Colors.red,
                   context: context,
                   builder: (_) {
-                    return EscogeNumero();
+                    final numeroAdivinar = Random().nextInt(101);
+                    return EscogeNumero(
+                      numeroAdivinar: numeroAdivinar,
+                    );
                   },
                 );
               },
